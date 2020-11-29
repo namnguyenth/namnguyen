@@ -39,8 +39,16 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="cart.js">
+
   </head>
   <style></style>
+  <script>
+    function buy(){
+      alert('Cảm ơn khách hàng' + document.getElementById("ho").value + document.getElementById("ten").value);
+      alert('Đặt mua thành công');
+    }
+  </script>
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <!-- logo -->
@@ -89,7 +97,7 @@
                   ><i class="fas fa-envelope"></i
                 ></span>
               </div>
-              <input type="text" class="form-control" placeholder="Email" />
+              <input id="email" type="text" class="form-control" placeholder="Email" />
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -97,7 +105,7 @@
                   ><i class="fas fa-bold"></i
                 ></span>
               </div>
-              <input type="text" class="form-control" placeholder="Họ" />
+              <input id="ho" type="text" class="form-control" placeholder="Họ" />
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -105,7 +113,7 @@
                   ><i class="fas fa-font"></i
                 ></span>
               </div>
-              <input type="text" class="form-control" placeholder="Tên" />
+              <input id="ten" type="text" class="form-control" placeholder="Tên" />
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -125,7 +133,7 @@
                   ><i class="fas fa-map-marker"></i
                 ></span>
               </div>
-              <input type="text" class="form-control" placeholder="Địa chỉ" />
+              <input id="add" type="text" class="form-control" placeholder="Địa chỉ" />
             </div>
             <div class="empty mb-5"></div>
             <hr style="border: 1px solid #333" />
@@ -154,15 +162,43 @@
         <div class="d-none d-sm-block col-md-2"></div>
         <!-- cart -->
         <!-- can phai fix -->
-        <div class="col-md-5 col-xs-12" style="width: 100%;">
+        <div class="col-md-5 col-xs-12" style="width: 100%">
           <h2 class="mb-5" style="text-align: center">Giỏ hàng của bạn</h2>
           <div class="items"></div>
           <hr style="border: 1px solid #333" />
           <p>Giá: 00000$</p>
           <p>Phí vận chuyển</p>
           <p>Tổng cộng :00000$</p>
+          <input type="button" id="buy" class="btn btn-secondary" value="Đặt mua" onclick="buy()"></input>
         </div>
       </div>
     </div>
+    <!-- footer  -->
+    <footer>
+      <div class="container">
+        <div class="row" id="rowf">
+          <div class="col-md-4">
+            <h2 style="color: #ffffff">Chủ sở hữu website</h2>
+            Công ty TNHH
+            <br />
+            Ngày cấp: 4-7-2011
+          </div>
+          <div class="col-md-4">
+            <h2 style="color: #ffffff">Tư vấn mua tranh</h2>
+            Hotline: 070 555 8488
+            <br />
+            Tư vấn viên: 070 555 8488
+            <br />
+            namnguyenth0311@gmail.com
+            <br />
+            facebook/blues.nam.9
+          </div>
+          <div class="col-md-4">
+            <h2 style="color: #ffffff">Địa chỉ</h2>
+            243 Khương Trung , Quận Thanh xuân, Hà Nội
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
