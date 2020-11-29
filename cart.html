@@ -77,13 +77,12 @@
       <div class="row">
         <div class="col-md-5 col-xs-12">
           <form action="">
-            <div class="titleInfor">
+            <!-- form1 -->
+            <div class="titleInfor mb-5">
               <div id="circle">1</div>
-              <h2>Thông tin của bạn</h2>
+              <h2>&nbsp;Thông tin của bạn</h2>
               <div class="empty-mb-5"></div>
             </div>
-            <br />
-            <br />
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text"
@@ -114,7 +113,11 @@
                   ><i class="fas fa-phone-alt"></i
                 ></span>
               </div>
-              <input type="text" class="form-control" placeholder="Số điện thoại" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Số điện thoại"
+              />
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -124,10 +127,41 @@
               </div>
               <input type="text" class="form-control" placeholder="Địa chỉ" />
             </div>
+            <div class="empty mb-5"></div>
+            <hr style="border: 1px solid #333" />
+            <div class="empty mb-5"></div>
+
+            <!-- form2 -->
+            <div class="payment mb-5">
+              <div id="circle">2</div>
+              <h2>&nbsp;Phương thức thanh toán</h2>
+              <div class="empty-mb-5"></div>
+            </div>
+            <div class="radio">
+              <label
+                ><input type="radio" name="optradio" checked />Thanh toán bằng
+                tiền mặt khi nhận hàng
+              </label>
+            </div>
+            <div class="radio">
+              <label
+                ><input type="radio" name="optradio" />Thanh toán bằng thẻ tín
+                dụng
+              </label>
+            </div>
           </form>
         </div>
-        <div class="col-md-2 col-xs-12" style="background-color: yellow">2</div>
-        <div class="col-md-5 col-xs-12" style="background-color: violet">3</div>
+        <div class="d-none d-sm-block col-md-2"></div>
+        <!-- cart -->
+        <!-- can phai fix -->
+        <div class="col-md-5 col-xs-12" style="width: 100%;">
+          <h2 class="mb-5" style="text-align: center">Giỏ hàng của bạn</h2>
+          <div class="items"></div>
+          <hr style="border: 1px solid #333" />
+          <p>Giá: 00000$</p>
+          <p>Phí vận chuyển</p>
+          <p>Tổng cộng :00000$</p>
+        </div>
       </div>
     </div>
   </body>
