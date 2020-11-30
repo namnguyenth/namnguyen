@@ -1,4 +1,4 @@
-body{
+body {
   /* font-family: 'Times New Roman', Times, serif; */
 }
 .icon {
@@ -6,11 +6,11 @@ body{
   text-decoration: none;
   color: white;
 }
-a{
+a {
   font-size: 20px;
 }
-h2{
-  font-family: 'Times New Roman', Times, serif;
+h2 {
+  font-family: "Times New Roman", Times, serif;
 }
 hr.hr {
   border: 1px solid #333;
@@ -32,8 +32,7 @@ hr.hr {
   width: 20%;
   text-align: center;
 }
-#carouselExampleControls{
-
+#carouselExampleControls {
 }
 h3 {
   text-align: center;
@@ -43,6 +42,7 @@ h3 {
 row {
   margin: 0 auto;
 }
+
 #table {
   width: 240px;
   height: 354px;
@@ -53,10 +53,40 @@ row {
   height: 260px;
   border: 5px solid #333;
   margin: 0 auto;
+  position: relative;
 }
-.content-picture img{
+.content-picture:hover img {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.content-picture:hover .middle {
+  opacity: 1;
+}
+.content-picture img {
+  opacity: 1;
   width: 100%;
   height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#WishList {
+  color: #ffffff;
+  font-size: 30px;
+}
+#CartList {
+  color: #ffffff;
+  font-size: 30px;
+
 }
 .content-information {
   width: 210px;
@@ -65,18 +95,29 @@ row {
   display: flex;
 }
 .content-information1 {
-  width: 50%;
+  width: 70%;
+}
+#name {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+#author {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
 }
 .content-information2 {
-  width: 50%;
+  width: 30%;
 }
 .text {
   color: #333;
   position: absolute;
-  font-size: 1rem; 
-  padding: 10rem; 
+  font-size: 1rem;
+  padding: 10rem;
 }
-img{
+img {
   width: 100%;
 }
 #circle {
@@ -88,18 +129,18 @@ img{
   max-width: 40px;
   width: 100%;
   height: 40px;
-  color: #FFFFFF;
-  background: #D5A770;
+  color: #ffffff;
+  background: #d5a770;
   border-radius: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer{
+footer {
   background-color: #333;
   color: #919294;
 }
-#rowf{
+#rowf {
   padding-top: 2rem;
   line-height: 3rem;
 }
