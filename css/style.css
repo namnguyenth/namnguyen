@@ -6,9 +6,6 @@ body {
   text-decoration: none;
   color: white;
 }
-a {
-  font-size: 20px;
-}
 h2 {
   font-family: "Times New Roman", Times, serif;
 }
@@ -39,8 +36,8 @@ h3 {
   /* padding: 2rem; */
   font-family: "Times New Roman", Times, serif;
 }
-row {
-  margin: 0 auto;
+a {
+  text-decoration: none;
 }
 
 #table {
@@ -120,6 +117,21 @@ row {
 img {
   width: 100%;
 }
+.new .title{
+  font-size: 17px;
+  color: #D5A770
+}
+#news1 img {
+  width: 135px;
+  height: 145px;
+}
+.description a{
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
 #circle {
   font-family: Roboto;
   font-style: normal;
